@@ -1,0 +1,12 @@
+*#*#
+*.#*
+*.iml
+*.ipr
+*.iws
+*.pyc
+*.pyo
+*.swp
+*~
+.cache
+.DS_Store
+**/.DS_Store 
