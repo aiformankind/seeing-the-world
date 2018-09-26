@@ -7,3 +7,6 @@ According to WHO, there are 253 million people live with vision impairment. 217 
 We will start with building model to recognize fruit and vegetable in Farmer Market and expand to other settings.
 
 We encourage our members and public to take pictures of different fruit and vegetable whenever they go to Farmer Market and commit back to the repo. We will build model using these pictures.
+
+### Project Advisors:
+Jigar Doshi from CrowdAI
