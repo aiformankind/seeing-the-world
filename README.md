@@ -1,7 +1,7 @@
 # Seeing the World
 
 
-#### If an autonomous vehicle can drive itself, I strongly believe we can enable the vision impaired and blinds to see and navigate the world with ease.
+> ***If an autonomous vehicle can drive itself, I strongly believe we can enable the vision impaired and blinds to see and navigate the world with ease.***
 
 
 Enabling the vision impaired and blinds to see and navigate the world with ease is the main goal of this AI for Mankind's **Seeing the World** open source project. We want to leverage the power of open source community to build low cost open source image recognition and object detection models to empower the vision impaired and blinds to see and navigate the world. All the models built will be freely available to all across the entire world. 
@@ -24,5 +24,6 @@ According to WHO, there are 253 million people live with vision impairment. 217 
 - Outdoor Space Detection
 - Indoor Space Detection
 
-### Project Advisors:
+
+#### Project Advisors:
 Jigar Doshi from CrowdAI
