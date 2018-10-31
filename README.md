@@ -23,7 +23,9 @@ According to WHO, there are 253 million people live with vision impairment. 217 
 - Outdoor Space Detection
 - Indoor Space Detection
 
-#### Quick Start: Train Model via Transfer Learning
+#### Quick Start
+
+***Building Fruit/Vegetable Model via Transfer Learning***
 
 Install Docker 
 https://docs.docker.com/v17.12/docker-for-mac/install/#install-and-run-docker-for-mac
