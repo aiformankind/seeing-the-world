@@ -51,6 +51,15 @@ Set environment variables:
 IMAGE_SIZE=224
 ARCHITECTURE="mobilenet_0.50_${IMAGE_SIZE}"
 ```
+
+Install Augmentor:
+https://github.com/mdbloice/Augmentor
+```
+apt update
+apt install wget
+pip install Augmentor
+```
+
 Augment data:
 ```
 python augment/augment_images.py
