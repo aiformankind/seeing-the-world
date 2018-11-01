@@ -44,7 +44,7 @@ cd seeing-the-world
 ```
 Start Tensorflow docker:
 ```
-docker run -it --rm -p 8888:8888 -v $PWD:/work -w /work tensorflow/tensorflow bash
+docker run -it --rm -p 8888:8888 -p 6006:6006 -v $PWD:/work -w /work tensorflow/tensorflow bash
 ```
 Set environment variables:
 ```
@@ -72,7 +72,7 @@ python -m train.retrain   --bottleneck_dir=train_output/bottlenecks   --how_many
 Predict label:
 
 ```
-python -m train.label_image --graph=train_output/retrained_graph.pb --image=validation/eggplant/eggplant-harvest-basket.jpg
+python -m train.label_image --graph=train_output/retrained_graph.pb --image=validation/tomato/tomato-val-1.jpg
 ```
 #### Project Advisors:
 Jigar Doshi from CrowdAI
