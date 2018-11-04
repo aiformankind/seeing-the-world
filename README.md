@@ -34,17 +34,17 @@ https://docs.docker.com/v17.12/docker-for-mac/install/#install-and-run-docker-fo
 We use the scripts provided by the following excellent Google’s TensorFlow For Poets codelab.
 https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0
 
-Clone the repo (https://github.com/aiformankind/seeing-the-world.git): ex.
+Clone the repository (https://github.com/aiformankind/seeing-the-world.git):
 ```
 git clone https://github.com/aiformankind/seeing-the-world.git
 ```
 
-Go to the repo directory that you just clone:
+Go to the repository directory that you just clone:
 ```
 cd seeing-the-world
 ```
 
-Build the Tensorflow docker (this job will pull the latest tensorflow images and set up the enviornment) :
+Build the Tensorflow docker (this job will pull the latest tensorflow images and set up the environment) :
 ```
 docker build -t tensorflow:v1 .
 ```
