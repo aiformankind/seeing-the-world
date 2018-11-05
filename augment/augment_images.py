@@ -1,5 +1,7 @@
 import Augmentor
-p = Augmentor.Pipeline("data/farmer_market",output_directory="/work/augment-data")
+import os
+
+p = Augmentor.Pipeline("data/farmer_market",output_directory="{}/augment-data".format(os.getcwd()))
 # Add some operations to an existing pipeline.
 
 # Add a horizontal flip operation to the pipeline:

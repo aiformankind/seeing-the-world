@@ -46,12 +46,12 @@ cd seeing-the-world
 
 Build the Tensorflow docker (this job will pull the latest tensorflow images and set up the environment) :
 ```
-docker build -t tensorflow:v1 .
+docker build -t aiformankind/seeingtheworld:0.0.1 .
 ```
 
 Start the Tensorflow container (this job will spin up the seetheworld container):
 ```
-docker run -it -p 8888:8888 -p 6006:6006 --name=seetheworld tensorflow:v1
+docker run -it -p 8888:8888 -p 6006:6006 --name=seeingtheworld aiformankind/seeingtheworld:0.0.1
 ```
 
 Augment data:
