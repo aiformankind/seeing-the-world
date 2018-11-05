@@ -1,0 +1,5 @@
+*.md
+LICENSE
+*.ipynb
+.gitignore
+Dockerfile
