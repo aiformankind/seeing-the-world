@@ -20,6 +20,7 @@ RUN apt-get update \
   && apt-get install -y \
      wget \
   && rm -rf /var/lib/apt/lists/* \
+  && pip install --upgrade pip \
   && pip install Augmentor
 
 # Run bash when the container launches
