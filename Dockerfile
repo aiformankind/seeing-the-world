@@ -5,6 +5,7 @@ FROM tensorflow/tensorflow
 ENV IMAGE_SIZE=224
 ENV ARCHITECTURE="mobilenet_0.50_${IMAGE_SIZE}"
 ENV WORKPATH /seeing-the-world
+ENV TF_CPP_MIN_LOG_LEVEL=2
 
 # Set the working directory based on the WORKPATH
 WORKDIR $WORKPATH
@@ -19,7 +20,9 @@ EXPOSE 8888 6006
 RUN apt-get update \
   && apt-get install -y \
      wget \
+     vim  \
   && rm -rf /var/lib/apt/lists/* \
+  && pip install --upgrade pip \
   && pip install Augmentor
 
 # Run bash when the container launches

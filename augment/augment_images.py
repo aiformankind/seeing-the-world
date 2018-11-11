@@ -22,4 +22,4 @@ p.zoom(probability=0.5, min_factor=1.1, max_factor=1.5)
 #p.zoom_random(probability=0.5, percentage_area=0.8)
 #p.zoom(probability=0.5, min_factor=1.1, max_factor=1.5)
 
-p.sample(1000)
+p.sample(2000)
