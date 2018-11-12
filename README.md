@@ -56,17 +56,17 @@ docker run -it -p 8888:8888 -p 6006:6006 --name=seeingtheworld aiformankind/seei
 
 Augment data:
 ```
-python augment/augment_images.py
+python augment/augment_images.py --image_dir=data/farmer_market --num_samples=2000
 ```
 
 Retrain model:
 ```
-python -m train.retrain   --bottleneck_dir=train_output/bottlenecks   --how_many_training_steps=500   --model_dir=train_output/models/   --summaries_dir=train_output/training_summaries/"${ARCHITECTURE}"   --output_graph=train_output/retrained_graph.pb   --output_labels=train_output/retrained_labels.txt   --architecture="${ARCHITECTURE}" --image_dir=augment-data
+python -m train.retrain   --bottleneck_dir=train_output/bottlenecks   --how_many_training_steps=500   --model_dir=train_output/models/   --summaries_dir=train_output/training_summaries/"${ARCHITECTURE}"   --output_graph=train_output/retrained_graph.pb   --output_labels=train_output/retrained_labels.txt   --architecture="${ARCHITECTURE}" --image_dir=augment-data/farmer_market
 ```
 
 Predict label:
 ```
-python -m train.label_image --graph=train_output/retrained_graph.pb --image=validation/tomato/tomato-val-1.jpg
+python -m train.label_image --graph=train_output/retrained_graph.pb --image=validation/farmer_market/tomato/tomato-val-1.jpg
 ```
 #### Project Advisors:
 Jigar Doshi from CrowdAI
