@@ -1,7 +1,22 @@
 import Augmentor
 import os
+import argparse
 
-p = Augmentor.Pipeline("data/farmer_market",output_directory="{}/augment-data".format(os.getcwd()))
+parser = argparse.ArgumentParser()
+parser.add_argument("--image_dir", type=str,
+      default='data/farmer_market',help="Specify the input image directory")
+parser.add_argument("--num_samples", type=int,
+      default='2000',help="Specify the number of samples")
+
+args = parser.parse_args()
+
+image_dir = args.image_dir
+num_samples = args.num_samples
+base_dir = os.getcwd()
+imageset_name=os.path.basename(os.path.normpath(image_dir))
+
+p = Augmentor.Pipeline("{}".format(image_dir), output_directory="{}/augment-data/{}".format(base_dir,imageset_name))
+
 # Add some operations to an existing pipeline.
 
 # Add a horizontal flip operation to the pipeline:
@@ -22,4 +37,4 @@ p.zoom(probability=0.5, min_factor=1.1, max_factor=1.5)
 #p.zoom_random(probability=0.5, percentage_area=0.8)
 #p.zoom(probability=0.5, min_factor=1.1, max_factor=1.5)
 
-p.sample(2000)
+p.sample(num_samples)
