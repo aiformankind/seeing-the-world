@@ -69,5 +69,5 @@ Predict label:
 python -m train.label_image --graph=train_output/retrained_graph.pb --image=validation/farmer_market/tomato/tomato-val-1.jpg
 ```
 #### Project Advisors:
-Jigar Doshi from CrowdAI
+Jigar Doshi from CrowdAI, [@jigarkdoshi](https://twitter.com/jigarkdoshi)
 
