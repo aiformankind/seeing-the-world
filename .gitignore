@@ -14,5 +14,3 @@
 .ipynb_checkpoints/
 flowers/
 *.h5
-*
-!.gitignore
