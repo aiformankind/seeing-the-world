@@ -56,18 +56,26 @@ docker run -it -p 8888:8888 -p 6006:6006 --name=seeingtheworld aiformankind/seei
 
 Augment data:
 ```
-python augment/augment_images.py --image_dir=data/farmer_market --num_samples=2000
+python augment/augment_images.py --image_dir=data/usa/farmer_market --num_samples=2000
 ```
 
 Retrain model:
 ```
-python -m train.retrain   --bottleneck_dir=train_output/bottlenecks   --how_many_training_steps=500   --model_dir=train_output/models/   --summaries_dir=train_output/training_summaries/"${ARCHITECTURE}"   --output_graph=train_output/retrained_graph.pb   --output_labels=train_output/retrained_labels.txt   --architecture="${ARCHITECTURE}" --image_dir=augment-data/farmer_market
+python -m train.retrain   --bottleneck_dir=train_output/bottlenecks   --how_many_training_steps=500   --model_dir=train_output/models/   --summaries_dir=train_output/training_summaries/"${ARCHITECTURE}"   --output_graph=train_output/retrained_graph.pb   --output_labels=train_output/retrained_labels.txt   --architecture="${ARCHITECTURE}" --image_dir=augment-data/usa/farmer_market
 ```
 
 Predict label:
 ```
-python -m train.label_image --graph=train_output/retrained_graph.pb --image=validation/farmer_market/tomato/tomato-val-1.jpg
+python -m train.label_image --graph=train_output/retrained_graph.pb --image=validation/usa/farmer_market/tomato/tomato-val-1.jpg
 ```
+
+#### Upload Pictures
+You can use one of the following methods to upload your fruit and vegetatble pictures to us. All uploaded pictures are automatically considered as public domain data and made freely available to anyone to use. Uploaded pictures are stored in our git repo for others to use. You acknowledge and agree to all the above by uploading your pictures.
+
+1. Create a Pull Request via Git
+2. Share your images with us (ai.for.mankind@gmail.com) via Google Photos. 
+3. Share your images via Instagram by using hashtag #FruitsVegChallenge and  #AI_<FRUIT_TYPE>, an AI prefix hashtag eg: #AI_carrot, #AI_cauliflower. Remember to tag aiformankind. [More infos about our Instagram #FruitsVegChallenge](https://www.instagram.com/p/Bp8vjuaADBi/) 
+
 #### Project Advisors:
 Jigar Doshi from CrowdAI, [@jigarkdoshi](https://twitter.com/jigarkdoshi)
 

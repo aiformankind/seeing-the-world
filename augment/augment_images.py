@@ -13,9 +13,10 @@ args = parser.parse_args()
 image_dir = args.image_dir
 num_samples = args.num_samples
 base_dir = os.getcwd()
-imageset_name=os.path.basename(os.path.normpath(image_dir))
+augment_dir = image_dir.replace("data","augment-data")
+absolute_augment_dir = "{}/{}".format(base_dir,augment_dir)
 
-p = Augmentor.Pipeline("{}".format(image_dir), output_directory="{}/augment-data/{}".format(base_dir,imageset_name))
+p = Augmentor.Pipeline(source_directory=image_dir, output_directory=absolute_augment_dir)
 
 # Add some operations to an existing pipeline.
 
