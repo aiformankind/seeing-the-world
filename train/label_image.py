@@ -12,17 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
 import argparse
-import sys
 import time
 
 import numpy as np
 import tensorflow as tf
+from src.util.downloader import DownloadHelper
+
 
 def load_graph(model_file):
   graph = tf.Graph()
@@ -80,6 +80,7 @@ if __name__ == "__main__":
 
   parser = argparse.ArgumentParser()
   parser.add_argument("--image", help="image to be processed")
+  parser.add_argument("--image_url", help="url contains the image to be processed")
   parser.add_argument("--graph", help="graph/model to be executed")
   parser.add_argument("--labels", help="name of file containing labels")
   parser.add_argument("--input_height", type=int, help="input height")
@@ -108,6 +109,9 @@ if __name__ == "__main__":
     input_layer = args.input_layer
   if args.output_layer:
     output_layer = args.output_layer
+  if args.image_url:
+    file_path = DownloadHelper(args.image_url).download_image()
+    file_name = file_path
 
   graph = load_graph(model_file)
   t = read_tensor_from_image_file(file_name,
