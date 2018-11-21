@@ -34,6 +34,11 @@ https://docs.docker.com/v17.12/docker-for-mac/install/#install-and-run-docker-fo
 We use the scripts provided by the following excellent Google’s TensorFlow For Poets codelab.
 https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0
 
+Increase the memory available to Docker Engine
+1. Navigate to Docker Preferences
+2. Select Advanced
+3. Increase Memory to 4.0 GiB
+
 Clone the repository (https://github.com/aiformankind/seeing-the-world.git):
 ```
 git clone https://github.com/aiformankind/seeing-the-world.git
@@ -78,4 +83,8 @@ You can use one of the following methods to upload your fruit and vegetatble pic
 
 #### Project Advisors:
 Jigar Doshi from CrowdAI, [@jigarkdoshi](https://twitter.com/jigarkdoshi)
+
+#### Troubleshooting
+
+* Problem: The **Augment data** step fails with error 'Killed'. Resolution: Increase memory allocated to Docker Engine and rerun.
 
