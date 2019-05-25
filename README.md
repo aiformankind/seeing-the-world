@@ -61,7 +61,7 @@ docker run -it -p 8888:8888 -p 6006:6006 --name=seeingtheworld aiformankind/seei
 
 Augment data:
 ```
-python augment/augment_images.py --image_dir=data/usa/farmer_market --num_samples=3000
+python augment/augment_images.py --image_dir=data/usa/farmer_market --num_samples=5000
 ```
 
 Retrain model:
