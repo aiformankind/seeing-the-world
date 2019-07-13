@@ -81,6 +81,12 @@ You can use one of the following methods to upload your fruit and vegetatble pic
 2. Share your images with us (ai.for.mankind@gmail.com) via Google Photos. 
 3. Share your images via Instagram by using hashtag #FruitsVegChallenge and  #AI_<FRUIT_TYPE>, an AI prefix hashtag eg: #AI_carrot, #AI_cauliflower. Remember to tag aiformankind. [More infos about our Instagram #FruitsVegChallenge](https://www.instagram.com/p/Bp8vjuaADBi/) 
 
+#### Apps for the Blind and Visually Impaired
+- [Seeing AI from Microsoft](https://www.microsoft.com/en-us/ai/seeing-ai)
+- [Lookout from Google](https://www.blog.google/outreach-initiatives/accessibility/lookout-discover-your-surroundings-help-ai/)
+- [aira](https://aira.io/)
+
+
 #### Project Advisors:
 Jigar Doshi from CrowdAI, [@jigarkdoshi](https://twitter.com/jigarkdoshi)
 
