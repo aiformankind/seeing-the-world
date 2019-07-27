@@ -10,13 +10,22 @@ According to WHO, there are 253 million people live with vision impairment. 217 
 ### List of Projects
 
 #### Image Recognition
-- Farmer Market
+- Fruit/Vegetable in Farmers' Market/Grocery Store
 
->As a baby step, we will start with building model to recognize fruit and vegetable in Farmer Market and expand to other settings. We will contribute back all the models back to Microsoft Seeing AI [Microsoft's Seeing AI app](https://www.microsoft.com/en-us/seeing-ai)
+As a baby step, we will start with building model to recognize fruit and vegetable in Farmers' Market/grocery store and expand to other settings. We will contribute back all the models back to Microsoft Seeing AI [Microsoft's Seeing AI app](https://www.microsoft.com/en-us/seeing-ai)
 
->We encourage our members and public to take pictures of different fruit and vegetable whenever they go to Farmer Market and commit back to the repo. We will build model using these pictures.
+We encourage our members and public to take pictures of different fruit and vegetable whenever they go to Farmer Market and commit back to the repo. We will build model using these pictures.
 
-- Hotel
+Even though Microsoft's Seeing AI mobile app is very powerful but its fruit/vegetable recognition skill still needs improvement. 
+
+See some misclassification of fruit/vegetable using Microsoft Seeing AI app. 
+
+|              |             |
+:-------------------------:|:-------------------------:
+![](images_in_readme/corn.PNG)  |  ![](images_in_readme/tomato.PNG)
+
+
+We want to help improve Microsoft Seeing AI's fruit/vegetable recognition capability by curating training dataset of fruit/vegetable across the entire world. Crowdsourcing of this dataset from across the world is important so that it will capture different variety of local fruits/vegetables across geography.
 
 
 #### Object Detection
@@ -93,4 +102,3 @@ Jigar Doshi from CrowdAI, [@jigarkdoshi](https://twitter.com/jigarkdoshi)
 #### Troubleshooting
 
 * Problem: The **Augment data** step fails with error 'Killed'. Resolution: Increase memory allocated to Docker Engine and rerun.
-
