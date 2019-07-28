@@ -18,11 +18,18 @@ We encourage our members and public to take pictures of different fruit and vege
 
 Even though Microsoft's Seeing AI mobile app is very powerful but its fruit/vegetable recognition skill still needs improvement. 
 
-See some misclassification of fruit/vegetable using Microsoft Seeing AI app. 
+See some misclassifications of fruit/vegetable using Microsoft Seeing AI app. 
 
 |              |             |
 :-------------------------:|:-------------------------:
 ![](images_in_readme/corn.PNG)  |  ![](images_in_readme/tomato.PNG)
+
+
+See some misclassifications of fruit/vegetable using Google Lens app. 
+
+|              |             |
+:-------------------------:|:-------------------------:
+![](images_in_readme/vegetable.PNG)  |  ![](images_in_readme/banana.PNG)
 
 
 We want to help improve Microsoft Seeing AI's fruit/vegetable recognition capability by curating training dataset of fruit/vegetable across the entire world. Crowdsourcing of this dataset from across the world is important so that it will capture different variety of local fruits/vegetables across geography.
@@ -70,7 +77,7 @@ docker run -it -p 8888:8888 -p 6006:6006 --name=seeingtheworld aiformankind/seei
 
 Augment data:
 ```
-python augment/augment_images.py --image_dir=data/usa/farmer_market --num_samples=5000
+python augment/augment_images.py --image_dir=data/usa/farmer_market --num_samples=9000
 ```
 
 Retrain model:
@@ -95,6 +102,10 @@ You can use one of the following methods to upload your fruit and vegetatble pic
 - [Lookout from Google](https://www.blog.google/outreach-initiatives/accessibility/lookout-discover-your-surroundings-help-ai/)
 - [aira](https://aira.io/)
 
+
+#### Roadmap
+1) Collect fruit/vegetable pics across entire world
+2) Build a crowdsourcing mobile app
 
 #### Project Advisors:
 Jigar Doshi from CrowdAI, [@jigarkdoshi](https://twitter.com/jigarkdoshi)
