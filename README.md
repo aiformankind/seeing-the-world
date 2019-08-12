@@ -3,7 +3,7 @@
 > ***If an autonomous vehicle can drive itself, I strongly believe we can enable people who are blind or have low vision to see and navigate the world with ease.***
 
 
-Enabling people who are blind and visually impaired to see and navigate the world with ease is the main goal of this AI for Mankind's **Seeing the World** open source project. We want to leverage the power of open source community to build low cost open source image recognition and object detection models to empower people who are blind and visually impaired to see and navigate the world. All the models built will be freely available to all across the entire world.
+Enabling people who are blind or have low vision to see and navigate the world with ease is the main goal of this AI for Mankind's **Seeing the World** open source project. We want to leverage the power of open source community to build low cost open source image recognition and object detection models to empower people who are blind or have low vision to see and navigate the world. All the models built will be freely available to all across the entire world.
 
 According to WHO, there are 253 million people live with vision impairment. 217 million have moderate to severe vision impairment and 36 million are blind. 81% of people who are blind or have moderate or severe vision impairment are aged 50 years and above.
 
@@ -99,7 +99,7 @@ You can use one of the following methods to upload your fruit and vegetatble pic
 2. Share your images with us (ai.for.mankind@gmail.com) via Google Photos. 
 3. Share your images via Instagram by using hashtag #FruitsVegChallenge and  #AI_<FRUIT_TYPE>, an AI prefix hashtag eg: #AI_carrot, #AI_cauliflower. Remember to tag aiformankind. [More infos about our Instagram #FruitsVegChallenge](https://www.instagram.com/p/Bp8vjuaADBi/) 
 
-#### Apps for the Blind and Visually Impaired
+#### Apps for people who are blind or have vision impairment
 - [Seeing AI from Microsoft](https://www.microsoft.com/en-us/ai/seeing-ai)
 - [Lookout from Google](https://www.blog.google/outreach-initiatives/accessibility/lookout-discover-your-surroundings-help-ai/)
 - [aira](https://aira.io/)
