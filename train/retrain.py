@@ -162,7 +162,7 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
       continue
     if len(file_list) < 30:
       tf.logging.warning(
-          'WARNING: Folder has less than 20 images, which may cause issues.')
+          'WARNING: Folder has less than 30 images, which may cause issues.')
       continue
     elif len(file_list) > MAX_NUM_IMAGES_PER_CLASS:
       tf.logging.warning(
