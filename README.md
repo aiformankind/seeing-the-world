@@ -115,3 +115,8 @@ Jigar Doshi from CrowdAI, [@jigarkdoshi](https://twitter.com/jigarkdoshi)
 #### Troubleshooting
 
 * Problem: The **Augment data** step fails with error 'Killed'. Resolution: Increase memory allocated to Docker Engine and rerun.
+
+#### Join AI For Mankind
+Join us in applying AI to solve world's challenging problems and make the world a better place for everyone.
+[AI For Mankind](https://www.meetup.com/AI-for-Mankind/)
+
